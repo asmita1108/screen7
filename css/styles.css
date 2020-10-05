@@ -1,0 +1,216 @@
+/*----------------------------------------------
+/* BASIC SETUPS */
+/*----------------------------------------------*/
+
+@font-face {
+    font-family: pedija-bold;
+    src: url(../fonts/poppins.bold.ttf);
+}
+@font-face {
+    font-family: pedija-regular;
+    src: url(../fonts/poppins.regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: #141313;
+    font-family: pedija-regular;
+    text-rendering: optimizeLegibility;
+}
+
+/*----------------------------------------------
+/* REUSABLE COMPONENTS */
+/*----------------------------------------------*/
+.mb-container {
+  max-width: 375pt;
+  height: 745px;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 0px auto;
+  opacity: 1;
+  border: 1px solid #eee;
+  padding: 20px 15px;
+}
+
+/*----------------------------------------------
+/* Header */
+/*----------------------------------------------*/
+.icon-holder {
+    display: block;
+}
+.search-header {
+    height: 40pt;
+    width: 100%;
+}
+
+.crossPageIcon {
+  width: 20px;
+  height: 100%;
+}
+
+.searchBar {
+  width: 93%;
+  height: 90%;
+  border: 1pt solid #e3e3e3;
+  background-color: #f5f4f4;
+  padding: 10px;
+  border-radius: 3pt;
+  float: right;
+}
+.searchBar > img {
+  width: 15px;
+  height: auto;
+  vertical-align: baseline;    
+}
+.searchBar > input {
+  border: none;
+  width: 80%;
+  height: auto; 
+  background: transparent;
+  font-size: 14pt;
+  padding-left: 8px;
+  text-align: left;
+  color: #242A4B;
+  opacity: 100%;
+ 
+}
+::placeholder {
+  color: #bcbfd1;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #bcbfd1;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #bcbfd1;
+}
+.searchBar > input:focus{
+    border: none;
+     border-style: none;
+    outline: none !important;
+}
+
+.search-header:after {
+    display: block;
+    height: 4px;
+    background-color: #f5f4f4;
+    content: " ";
+    width: 375pt;
+    margin: 0, auto;
+    margin: 30px -15px 0px -15px;
+}
+.section-header {
+    color: #242A4B;
+    font-size: 18pt;
+    text-align: left;
+    font-family: pedija-bold;
+    opacity: 100%;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    height: 22pt;
+    width: 100%;
+}
+.location-detect p {
+    display: block;
+    width: 400px;
+    float: left;
+    height: 40px;
+    font-size: 14pt;
+    color: #541871;
+    opacity: 100%;
+    margin-left:10px;
+    
+}
+.text-wrap-inline {
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.location-result p {
+    color: #242A4B;
+}
+.location-next-icon {
+    display: block;
+    float: right;
+    margin-top: 5px;
+    background-color:#AFB1BC;
+    width: 10px;
+    height: 19px;
+}
+.location-detect a:hover {
+     outline: none !important;
+     text-decoration: none;
+}
+
+.location-result:after {
+    display: block;
+    clear: both;
+    height: 1pt;
+    background-color: #EDEDED;
+    content: " ";
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+
+.location-detect {
+    height: 50px;
+    max-width: 100%;
+    zoom: 1;
+}
+.saved-address {
+    height: 45pt;
+    max-width: 100%;
+    padding: 20pt 0pt 0pt 0pt;
+    zoom: 1;
+
+}
+.saved-address p {
+    display: block;
+    width: auto;
+    float: left;
+    font-size: 14pt;
+    color: #242A4B;
+    opacity: 100%;
+    margin: 0px;
+    margin-left:10px;   
+}
+
+/*-----------------------------------------------
+/* DIVIDER row */
+/* --------------------------------------------*/
+
+.divider-1pt:after {
+    display: block;
+    height: 1pt;
+    background-color: #EDEDED;
+    content: " ";
+    width: 375pt;
+    margin: 40px -15px 0px -15px;
+}
+.divider-10pt:after {
+    display: block;
+    height: 10pt;
+    background-color: #EFF0F7;
+    content: " ";
+    width: 375pt;
+    margin: 40px -15px 0px -15px;
+}
+
+img.ri:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
