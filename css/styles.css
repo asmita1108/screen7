@@ -36,23 +36,66 @@ body {
   padding: 20px 15px;
 }
 
+/*-----------------------------------------------
+/* DIVIDER row */
+/* --------------------------------------------*/
+
+.divider-1pt:after {
+    display: block;
+    height: 1pt;
+    background-color: #EDEDED;
+    content: " ";
+    width: 375pt;
+    margin: 50px -15px 0px -15px;
+}
+.divider-4pt:after {
+    display: block;
+    height: 4pt;
+    background-color: #f5f4f4;
+    content: " ";
+    width: 100vw;
+    margin: 25pt -15px 0px -15px;
+}
+.divider-10pt:after {
+    display: block;
+    height: 10pt;
+    background-color: #EFF0F7;
+    content: " ";
+    width: 375pt;
+    margin: 25px -15px 0px -15px;
+}
+
+/******************************************/
+/* COMMON ICON CSS */
+/**********************************/
+
+.location-next-icon {
+    display: block;
+    float: right;
+    margin-top: 13px;
+    width: 10.86pt;
+    height: 12.87pt;
+}
+.text-wrap-inline {
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /*----------------------------------------------
 /* Header */
 /*----------------------------------------------*/
-.icon-holder {
-    display: block;
-}
+
 .search-header {
     height: 40pt;
     width: 100%;
 }
-
 .crossPageIcon {
   width: 20px;
   height: 100%;    
 }
-
 .searchBar {
+  margin-left: 11px;    
   width: calc(100% - 31px);
   height: 90%;
   border: 1pt solid #e3e3e3;
@@ -62,13 +105,13 @@ body {
   float: right;
 }
 .searchBar > img {
-  width: 15px;
+  width: 20px;
   height: auto;
-  vertical-align: baseline;    
+  vertical-align: sub;    
 }
 .searchBar > input {
   border: none;
-  width: calc(100% - 45px);
+  width: calc(100% - 50px);
   height: auto; 
   background: transparent;
   font-size: 14pt;
@@ -95,68 +138,11 @@ body {
      border-style: none;
     outline: none !important;
 }
+
 /************************************/
-/* SECTIO */
+/* SECTION CSS */
 /************************/
 
-.section-header {
-    color: #242A4B;
-    font-size: 18pt;
-    text-align: left;
-    font-family: pedija-bold;
-    opacity: 100%;
-    margin-top: 40px;
-    margin-bottom: 35px;
-    height: 22pt;
-    width: 100%;
-}
-.location-detect p {
-    display: block;
-    width: 400px;
-    float: left;
-    height: 40px;
-    font-size: 14pt;
-    color: #541871;
-    opacity: 100%;
-    margin-left:10px;
-    
-}
-.text-wrap-inline {
-    height: auto;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.location-result p {
-    color: #242A4B;
-}
-.location-next-icon {
-    display: block;
-    float: right;
-    margin-top: 5px;
-    width: 6.86pt;
-    height: 12.87pt;
-}
-.location-detect a:hover {
-     outline: none !important;
-     text-decoration: none;
-}
-
-.location-result:after {
-    display: block;
-    clear: both;
-    height: 1pt;
-    background-color: #EDEDED;
-    content: " ";
-    width: 100%;
-    margin: 20px 0px 20px 0px;
-}
-
-.location-detect {
-    height: 50px;
-    max-width: 100%;
-    zoom: 1;
-}
 .saved-address {
     height: 45pt;
     max-width: 100%;
@@ -167,39 +153,15 @@ body {
 .saved-address p {
     display: block;
     width: auto;
+    height: auto;
     float: left;
-    font-size: 14pt;
+    font-size: 15pt;
     color: #242A4B;
     opacity: 100%;
-    margin: 0px;
-    margin-left:10px;   
+    margin: 5px 0px 5px 10px;    
 }
 
-/*-----------------------------------------------
-/* DIVIDER row */
-/* --------------------------------------------*/
 
-.divider-1pt:after {
-    display: block;
-    height: 1pt;
-    background-color: #EDEDED;
-    content: " ";
-    width: 375pt;
-    margin: 40px -15px 0px -15px;
-}
-.divider-4pt:after {
-    display: block;
-    height: 4pt;
-    background-color: #f5f4f4;
-    content: " ";
-    width: 100vw;
-    margin: 25pt -15px 0px -15px;
-}
-.divider-10pt:after {
-    display: block;
-    height: 10pt;
-    background-color: #EFF0F7;
-    content: " ";
-    width: 375pt;
-    margin: 40px -15px 0px -15px;
-}
+/************************************
+ MEDIA QUERRY 
+*********************************/
