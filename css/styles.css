@@ -27,7 +27,7 @@ body {
 /*----------------------------------------------*/
 .mb-container {
   max-width: 375pt;
-  height: 745px;
+  height: 100vh;
   overflow: hidden;
   background-color: #ffffff;
   margin: 0px auto;
@@ -49,11 +49,11 @@ body {
 
 .crossPageIcon {
   width: 20px;
-  height: 100%;
+  height: 100%;    
 }
 
 .searchBar {
-  width: 93%;
+  width: calc(100% - 31px);
   height: 90%;
   border: 1pt solid #e3e3e3;
   background-color: #f5f4f4;
@@ -68,7 +68,7 @@ body {
 }
 .searchBar > input {
   border: none;
-  width: 80%;
+  width: calc(100% - 45px);
   height: auto; 
   background: transparent;
   font-size: 14pt;
@@ -95,16 +95,10 @@ body {
      border-style: none;
     outline: none !important;
 }
+/************************************/
+/* SECTIO */
+/************************/
 
-.search-header:after {
-    display: block;
-    height: 4px;
-    background-color: #f5f4f4;
-    content: " ";
-    width: 375pt;
-    margin: 0, auto;
-    margin: 30px -15px 0px -15px;
-}
 .section-header {
     color: #242A4B;
     font-size: 18pt;
@@ -158,7 +152,6 @@ body {
     margin: 20px 0px 20px 0px;
 }
 
-
 .location-detect {
     height: 50px;
     max-width: 100%;
@@ -194,6 +187,14 @@ body {
     width: 375pt;
     margin: 40px -15px 0px -15px;
 }
+.divider-4pt:after {
+    display: block;
+    height: 4pt;
+    background-color: #f5f4f4;
+    content: " ";
+    width: 100vw;
+    margin: 25pt -15px 0px -15px;
+}
 .divider-10pt:after {
     display: block;
     height: 10pt;
@@ -201,15 +202,4 @@ body {
     content: " ";
     width: 375pt;
     margin: 40px -15px 0px -15px;
-}
-
-img.ri:empty
-{
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
 }

@@ -12,11 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-      
+     
+      <script>
+    </script>  
   </head>
   <body>
       <div class="mb-container">
-          <header class="search-header">
+          <header class="search-header divider-4pt">
              <a href="#" class="crossPageIcon">
                 <img
                 src="css/assets/close%20(22).svg"
@@ -24,8 +26,10 @@
              </a>
              <div class="searchBar">
               <img src="css/assets/Mask Group 39.svg" alt="search-bar"/>
-              <input type="text" placeholder="Search" >
-               <img src="css/assets/crosshairs-gps.svg" style="width: 19.07pt; height: 19.07pt; display: block;float: right;" alt="location-icons">  
+              <input type="text" id="search-area" onkeyup="this.setAttribute('value', this.value);" value="" placeholder="Search" >
+              <a href="#">
+                    <img src="css/assets/crosshairs-gps.svg" style="width: 19.07pt; height: 19.07pt; float: right; display: block" alt="location-icons"> 
+               </a>        
             </div>
           </header>
           
@@ -49,7 +53,7 @@
           
           <section>
             <div style="">
-                <img src="css/assets/map-pointer.svg" style="width: 71.13pt; height: 94.82pt; display: block; margin: 50% auto 0px" />
+                <img src="css/assets/map-pointer.svg" style="width: 71.13pt; height: 94.82pt; display: block; margin: 45% auto 0px" />
                 
                 <p style="text-align: center; font-family: pedija-bold; color: #242A4B; font-size: 18pt;">Recent Search</p>
             </div>
